@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(231, 229, 204), rgb(236, 175, 61));
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 6vh;
+  align-items: center;
+  opacity: 0.5;
+}
+
+h1 {
+  text-align: center;
+  margin-top: -20px;
+  color: rgb(14, 11, 12);
+  font-family: "Franklin Gothic Medium";
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+  display: flex;
+  margin-top: 40px;
+}
+
+.nav-link {
+  color: rgb(37, 21, 32);
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.cart {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+  margin-top: -40px;
+  opacity: 0.6;
+  color: brown;
+}
+
+.presentation {
+  display: flex;
+  width: auto;
+  margin: auto;
+  min-height: 62.5vh;
+  align-items: center;
+  height: auto;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 44px;
+  font-size: 500;
+  background: linear-gradient(to right, #a5752e, #db2241);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 5em;
+}
+
+.intro-text p {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
+  margin-left: 5em;
+}
+
+.cta {
+  padding: 50px 0px 0px 0px;
+  margin-left: 5rem;
+}
+
+.cta-select {
+  border: 2px solid #be1a4c;
+  background: transparent;
+  color: #7a390d;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-add {
+  background: #324e1f;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: white;
+  margin: 30px 0px 0px 30px;
+}
+
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  size: 48px;
+}
+
+.cover img {
+  height: 100%;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
+}
+
+.bycicle-select {
+  width: 40%;
+  display: contents;
+  justify-content: space-around;
+  position: absolute;
+  right: 50%;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translatex(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .presentation {
+    flex-direction: row-reverse;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .cta {
+    padding: 10 px 0px 0px 0px;
+  }
+}
+
+.Footer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 6vh;
+  align-items: center;
+  opacity: 0.5;
+}
+.container {
+  justify-content: space-around;
+  list-style: none;
+  display: flex;
+  margin-top: -200px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: -90px;
+  color: rgb(14, 11, 12);
+  font-family: "Franklin Gothic Medium";
+}
+.in h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2em;
+  color: rgb(145, 60, 60);
+}
+.content {
+  list-style: none;
+}
+.content a {
+  text-decoration: none;
+  color: rgb(46, 46, 110);
+  opacity: 0.6;
+  line-height: 30px;
+  transition: 3s ease opacity;
+  font-size: large;
+}
+.content a:hover {
+  opacity: 1;
+}
+.in {
+  flex-basis: 18%;
+}
+form {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 5px 0;
+  background: #f5f5f5;
+}
+.btn input {
+  background: green;
+  color: #fff;
+  transition: 0.3s ease background;
+}
+.btn input:hover {
+  background: #000;
+}
+@media only screen and (max-width: 540px) {
+  .Footer .in {
+    flex-basis: 80%;
+    margin: 0 auto;
+  }
+  form {
+    flex-direction: column;
+  }
+  form input {
+    width: 90%;
+    margin: 5px auto;
+  }
+}
